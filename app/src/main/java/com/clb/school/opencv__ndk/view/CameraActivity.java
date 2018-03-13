@@ -35,6 +35,7 @@ public class CameraActivity extends AppCompatActivity implements CameraBridgeVie
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_camera);
+        Log.e("CameraActivity", "onCreate...");
         mOpenCvCameraView = (CameraBridgeViewBase)findViewById(R.id.CameraView);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
