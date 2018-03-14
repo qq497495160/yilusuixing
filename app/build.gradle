@@ -17,11 +17,6 @@ android {
             }
         }
     }
-    sourceSets{
-        main{
-            jniLibs.srcDirs = ['src/main/jniLibs']
-        }
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -38,7 +33,7 @@ android {
         useNewCruncher = false
     }
 }
-
+//gradlew app:packageDebug --stacktrace
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -52,7 +47,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     testCompile 'junit:junit:4.12'
     compile project(':openCVLibrary320')
-    compile files('libs/AMap3DMap_5.5.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171107.jar')
-    compile files('libs/Msc.jar')
-    compile files('libs/Sunflower.jar')
+//    compile files('libs/AMap3DMap_5.5.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171107.jar')
+//    compile files('libs/Msc.jar')
+//    compile files('libs/Sunflower.jar')
 }

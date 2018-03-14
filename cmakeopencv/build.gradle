@@ -21,11 +21,6 @@ android {
             }
         }
     }
-    sourceSets{
-        main{
-            jniLibs.srcDirs = ['src/main/jniLibs']
-        }
-    }
 
     buildTypes {
         release {
